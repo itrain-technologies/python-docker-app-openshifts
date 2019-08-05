@@ -18,9 +18,9 @@ node{
     }
    
    stage("App deployment started"){
-     //sh 'oc login https://api.starter-us-west-1.openshift.com --token=l334xAzzGBl7kvYuUFcvfRCCXMsQxeQJox3pEzbSQrQ'
-     //sh 'oc new project padmavathy'
-     //sh 'oc new-app manee2k6/python-app:pattabhi-1.0 --name python-app'
+     sh 'oc login https://api.us-east-1.online-starter.openshift.com --token=OXcg8B_XN82LvMDkNCc9uGG-zA0YzIb-UYulztK2jZ8'
+     sh 'oc new project dockerpython'
+     //sh 'oc new-app aashishprabhakaran/itrain-technologies:pattabhi-1.0 --name python-app'
      //sh 'oc expose svc python-app --name=python-app'
      //sh 'oc status'
     }
@@ -31,27 +31,8 @@ node{
 
    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//openshift
+//oc login --token=OXcg8B_XN82LvMDkNCc9uGG-zA0YzIb-UYulztK2jZ8 --server=https://api.us-east-1.online-starter.openshift.com:6443
 
 
 }
