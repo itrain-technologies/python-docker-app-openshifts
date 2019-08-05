@@ -18,7 +18,7 @@ node{
     }
    
    stage("App deployment started"){
-     sh 'oc login https://api.us-east-1.online-starter.openshift.com --token=OXcg8B_XN82LvMDkNCc9uGG-zA0YzIb-UYulztK2jZ8'
+     sh 'oc login https://api.us-east-1.online-starter.openshift.com --token=SyC6k2uOVRfPWorLjeFCNV8ygtEgoF80HQ1laz3po_I'
      sh 'oc new project dockerpython'
      //sh 'oc new-app aashishprabhakaran/itrain-technologies:pattabhi-1.0 --name python-app'
      //sh 'oc expose svc python-app --name=python-app'
