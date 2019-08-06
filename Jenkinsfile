@@ -29,12 +29,4 @@ node{
      echo 'App deployed to Openshift environment..'
     }
    
-//sh 'oc import-image manee2k6/python-app:pattabhi-1.0 --name python-app'
-   //sh 'oc login --token=SyC6k2uOVRfPWorLjeFCNV8ygtEgoF80HQ1laz3po_I --server=https://api.us-east-1.online-starter.openshift.com:6443'
-   //sh 'oc login --token=U0mNHuUe1VMJNXU7UplhPs46ywPnq6FGfz0cMlQcSuQ --server=https://api.us-east-2.online-starter.openshift.com:6443'
-
-//openshift
-//oc login --token=OXcg8B_XN82LvMDkNCc9uGG-zA0YzIb-UYulztK2jZ8 --server=https://api.us-east-1.online-starter.openshift.com:6443
-
-
 }
