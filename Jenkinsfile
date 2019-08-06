@@ -4,17 +4,7 @@ node{
       echo 'App build started..'
       git credentialsId: 'Github-ID', url: 'https://github.com/itrain-technologies/python-docker-app-openshifts.git'
       }
-   stage('SonarScan') {
-      //withSonarQubeEnv('sonar') {
-         withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
-             //sh 'mvn clean package sonar:sonar' 
-             sh ' mvn org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar ' +
-             ' -Dsonar.host.url=https://sonarcloud.io ' +
-             ' -Dsonar.organization=jfrog '+ 
-             ' -Dsonar.login=ac9d4e50459a71a808e9d31a2448987f4998ff1d '   
-         //}
-      }
-   }
+   
    stage('Docker Build') {
      def app = docker.build "aashishprabhakaran/itrain-technologies"
     }
